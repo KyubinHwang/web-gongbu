@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+	<title>나만의 자취방 취취!</title>
+</head>
+<style>
+  .btn{
+            text-decoration: none;
+            font-size: 2rem;
+            text-align: center;
+            display : inline-block;
+            border-radius: 5px;
+            padding: 5px 3px 10px 4px;
+            transition: all 0.1s;
+            color: white;
+            text-shadow: 0px -2px rgba(0,0,0,0.5);
+            font-family: 'Orbitron', sans-serif;
+            width:10rem;
+            margin-top: 1rem;
+            margin-left: 16rem;
+            margin-right: 10px;
+        }
+        .btn.green{
+            background-color: #5cdef5;
+            border-bottom: 4px solid #3ac7f1;
+        }
+        .btn:active{
+            transform : translateY(3px);
+        }
+        .btn.green:active{
+            border-bottom: 2px solid #6cb6fc;
+        }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  height: 80vh;
+  background: #cfee97;
+  font-family:"";
+}
+
+h1 {
+  text-align: center; color: black; 
+  margin: 0 0 0.25em;
+  margin-top: 1rem;
+  margin-bottom: 2.2rem;
+}
+h2 {
+text-align: center;
+margin-top: 1rem;
+}
+h3 {
+  margin-left: 15px;
+}
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+.wrapper{
+border: 1px solid #FFBB00;
+background: #d9f5cc;
+width:1454px; 
+padding: 10px; 
+position: absolute;
+top: 25px;
+left: 35%;
+margin-left: -450px;
+}
+.total{
+border: 1px solid #cdc5f3;
+background: #cbeedf;
+width:700px;
+float: left;
+padding: 10px;
+}
+.sidebar{
+border: 1px solid #cdc5f3;
+background: #cbeedf;
+width:700px;
+float: left;
+padding: 10px;
+height: 27rem;
+margin-top: 0rem;
+margin-left: 10px;
+}
+
+
+</style>
+<body>
+
+<div class="wrapper">
+<h1 style="font-weight: 900;font-size: 45px;";>당신의 자취를 위한, 나만의 공간을 위한 취취</h1>
+
+<div class = "total">
+<h2 style="font-size: 30px;";>인테리어 설정하기</h2>	
+
+<h3>평 수</h3>
+<div class="select">
+  <select name="slct" id="slct">
+    <option selected disabled>평 수를 선택하세요</option>
+    <option value="1">5평</option>
+    <option value="2">7~8평</option>
+    <option value="3">10평</option>
+    <option value="4">10평이상</option>
+  </select>
+</div>
+
+<h3>방 개수</h3>
+<div class="select">
+  <select name="slct" id="slct">
+    <option selected disabled>방 형태를 선택하세요</option>
+    <option value="1">원룸</option>
+    <option value="2">투룸</option>
+    <option value="3">오피스텔</option>
+  </select>
+</div>
+
+<h3>예산 설정</h3>
+<div class="select">
+  <select name="slct" id="slct">
+    <option selected disabled>예산 범위를 정하세요</option>
+    <option value="1">50만원 미만</option>
+    <option value="2">50만원 이상 100만원 미만</option>
+    <option value="3">100만원 이상 200만원 미만</option>
+    <option value="4">200만원 이상 300만원 미만</option>
+  </select>
+</div>
+
+<h3>추가 선호 가구 타입1</h3>
+<div class="select">
+  <select name="slct" id="slct">
+    <option selected disabled>추가로 선호하는 가구 타입을 설정하세요(1)</option>
+    <option value="1">전자제품</option>
+    <option value="2">목재가구</option>
+    <option value="3">수납장류</option>
+    <option value="4">주방제품</option>
+    <option value="5">애완동물 용품</option>
+  </select>
+</div>
+
+<h3>추가 선호 가구 타입2</h3>
+<div class="select">
+  <select name="slct" id="slct">
+    <option selected disabled>추가로 선호하는 가구 타입을 설정하세요(2)</option>
+    <option value="1">전자제품</option>
+    <option value="2">목재가구</option>
+    <option value="3">수납장류</option>
+    <option value="4">주방제품</option>
+    <option value="5">애완동물 용품</option>
+  </select>
+</div>
+ <a class="btn green" href="인테리어 프로젝트 (조합).html" >조합하기
+ </a> 
+</div>
+<div class="sidebar">
+  <h4 style= "font-size: 20px;"> 1. 인테리어의 평 수, 방 개수, 예산을 먼저 기본적으로 설정해주세요.
+   <br>당신의 공간이 설정됩니다. 
+  <br>
+  <br>
+  2. 공간 설정 후, 가구를 놓게 될 때의 추가로 선호하는 가구 타입이 있다면 설정해주세요.
+  <br>
+  <br>
+  3. 공간설정 후 기본적으로 주어지는 가구는 침대(1), 책상(1), 의자(1), 옷장(1), 서랍장(1) 입니다. 
+  <br>
+  <br>
+  4. 모든 카테고리들을 설정하고 조합된 공간을 보고 싶다면 카테고리 하단 '조합하기' 버튼을 눌러주세요.
+  <br>
+</h4>
+</div>
+<a class="btn green" href="인테리어 프로젝트 (설명).html" style="font-size: 20px;"> 더 자세한 설명</a> 
+<a class="btn green" href="인테리어 프로젝트 (제작자).html" style="font-size: 20px;"> 제작자의 말</a>
+</div>
+</body>
+</html> 
